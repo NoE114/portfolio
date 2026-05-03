@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoE | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-contact">
+    <div class="matrix-rain" data-matrix-rain aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="terminal-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell-window" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>NoE@portfolio:~</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-menu>
+          <a href="index.html">home</a>
+          <button class="nav-button" type="button" data-about-open>about</button>
+          <a href="projects.html">projects</a>
+          <a href="contact.html" aria-current="page">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-layout">
+        <div class="page-hero">
+          <p class="eyebrow">ssh NoE@contact</p>
+          <h1>Get in Touch</h1>
+          <p>Send a project idea, collaboration note, or quick hello through the terminal form.</p>
+        </div>
+
+        <form
+          class="contact-form shell-window"
+          name="contact"
+          method="POST"
+          action="/"
+          data-netlify="true"
+          netlify
+          netlify-honeypot="bot-field"
+          id="contact-form"
+        >
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window-title">~/message.compose</span>
+          </div>
+          <div class="form-body">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden-field" aria-hidden="true">
+              <label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
+            <label>
+              <span>$ name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>$ email</span>
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              <span>$ message</span>
+              <textarea name="message" rows="7" placeholder="Tell me about your idea" required></textarea>
+            </label>
+            <button class="btn primary" type="submit" id="submit-btn">./send-message</button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="about-modal" data-about-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button class="modal-backdrop" type="button" data-about-close aria-label="Close about terminal"></button>
+      <section class="about-terminal shell-window" aria-label="About me terminal">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-title" id="about-modal-title">~/about.md</span>
+          <button class="terminal-close" type="button" data-about-close aria-label="Close">x</button>
+        </div>
+        <div class="terminal-body" data-terminal="about">
+          <p><span class="prompt">$</span> cat about.md</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

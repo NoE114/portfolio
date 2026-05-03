@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoE | Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-projects">
+    <div class="matrix-rain" data-matrix-rain aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="terminal-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell-window" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>NoE@portfolio:~</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-menu>
+          <a href="index.html">home</a>
+          <button class="nav-button" type="button" data-about-open>about</button>
+          <a href="projects.html" aria-current="page">projects</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">find ./projects -type repo</p>
+        <h1>Project Log</h1>
+        <p>Public builds, experiments, and hackathon work pulled from GitHub with local fallbacks.</p>
+      </section>
+
+      <section class="section">
+        <div class="projects-grid full" data-projects-all>
+          <article class="project-card shell-window">
+            <span class="project-command">$ git fetch NoE114</span>
+            <h3>Loading repositories</h3>
+            <p>Fetching latest public projects from GitHub.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="about-modal" data-about-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button class="modal-backdrop" type="button" data-about-close aria-label="Close about terminal"></button>
+      <section class="about-terminal shell-window" aria-label="About me terminal">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-title" id="about-modal-title">~/about.md</span>
+          <button class="terminal-close" type="button" data-about-close aria-label="Close">x</button>
+        </div>
+        <div class="terminal-body" data-terminal="about">
+          <p><span class="prompt">$</span> cat about.md</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <span>NoE@portfolio:~/projects$</span>
+      <a href="contact.html">contact</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

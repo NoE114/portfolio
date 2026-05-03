@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoE | Terminal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-home">
+    <div class="matrix-rain" data-matrix-rain aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="terminal-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell-window" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>NoE@portfolio:~</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-menu>
+          <a href="index.html" aria-current="page">home</a>
+          <button class="nav-button" type="button" data-about-open>about</button>
+          <a href="#projects">projects</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">booting interactive portfolio</p>
+          <h1>Full-stack student developer building clean, usable web experiences.</h1>
+          <p>
+            I turn ideas into practical interfaces with HTML, CSS, JavaScript, React, Node,
+            Python, and a terminal-first workflow.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">./view-projects</a>
+            <button class="btn" type="button" data-about-open>./about-me</button>
+          </div>
+        </div>
+
+        <section class="terminal shell-window hero-terminal" aria-label="Terminal introduction">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window-title">~/profile.sh</span>
+          </div>
+          <div class="terminal-body" data-terminal="home">
+            <p><span class="prompt">$</span> ./profile --summary</p>
+            <p class="muted">Loading profile...</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="section split" id="about">
+        <div>
+          <p class="eyebrow">cat about.md</p>
+          <h2>Practical code, calm interfaces, and better details.</h2>
+        </div>
+        <div class="about-panel shell-window">
+          <p>
+            I like building transparent, accessible, and purposeful technology. My work focuses on
+            readable code, responsive layouts, smooth interaction, and products that are simple to
+            understand.
+          </p>
+          <dl class="stats">
+            <div><dt>Focus</dt><dd>Full-stack web</dd></div>
+            <div><dt>Status</dt><dd>Student</dd></div>
+            <div><dt>Workflow</dt><dd>Linux, Git, CLI</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">ls ./featured</p>
+          <h2>Featured Projects</h2>
+          <a class="text-link" href="projects.html">open full project log</a>
+        </div>
+        <div class="projects-grid" data-projects-featured>
+          <article class="project-card shell-window">
+            <span class="project-command">$ git fetch NoE114</span>
+            <h3>Loading repositories</h3>
+            <p>Fetching latest public projects from GitHub.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills">
+        <div class="section-heading">
+          <p class="eyebrow">printenv STACK</p>
+          <h2>Toolbox</h2>
+        </div>
+        <div class="skill-marquee shell-window" aria-label="Skills">
+          <div class="skill-track">
+            <div class="skill-group">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>React</span>
+              <span>Node.js</span><span>Python</span><span>C</span><span>Git</span>
+              <span>GitHub</span><span>Linux</span><span>REST APIs</span><span>Figma</span>
+            </div>
+            <div class="skill-group" aria-hidden="true">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>React</span>
+              <span>Node.js</span><span>Python</span><span>C</span><span>Git</span>
+              <span>GitHub</span><span>Linux</span><span>REST APIs</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="about-modal" data-about-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button class="modal-backdrop" type="button" data-about-close aria-label="Close about terminal"></button>
+      <section class="about-terminal shell-window" aria-label="About me terminal">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-title" id="about-modal-title">~/about.md</span>
+          <button class="terminal-close" type="button" data-about-close aria-label="Close">x</button>
+        </div>
+        <div class="terminal-body" data-terminal="about">
+          <p><span class="prompt">$</span> cat about.md</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <span>NoE@portfolio:~$ exit</span>
+      <a href="contact.html">start a conversation</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
