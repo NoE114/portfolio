@@ -279,7 +279,8 @@ const initContactForm = () => {
 
     try {
       const formData = new FormData(form);
-      const response = await fetch("/", {
+      const action = form.getAttribute("action") || "/";
+      const response = await fetch(action, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
@@ -290,6 +291,7 @@ const initContactForm = () => {
       feedback.className = "form-feedback success";
       feedback.textContent = "$ message sent successfully";
       form.reset();
+      window.location.href = action;
     } catch (error) {
       feedback.className = "form-feedback error";
       feedback.textContent = "$ send failed. Please try again later.";
