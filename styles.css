@@ -574,7 +574,13 @@ h2 {
   padding: 60px 0;
 }
 
-.contact-form {
+.contact-form,
+form[name="contact"] {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
   overflow: hidden;
 }
 
@@ -588,14 +594,17 @@ h2 {
   display: none;
 }
 
-.contact-form label {
+.contact-form label,
+form[name="contact"] label {
   display: grid;
   gap: 8px;
   color: var(--green);
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+form[name="contact"] input,
+form[name="contact"] textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -606,14 +615,18 @@ h2 {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+form[name="contact"] input:focus,
+form[name="contact"] textarea:focus {
   outline: none;
   border-color: var(--green);
   box-shadow: 0 0 0 3px rgba(127, 255, 190, 0.11);
 }
 
 .contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form textarea::placeholder,
+form[name="contact"] input::placeholder,
+form[name="contact"] textarea::placeholder {
   color: rgba(159, 202, 176, 0.58);
 }
 
