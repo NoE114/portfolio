@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoE | Message Sent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-contact">
+    <div class="matrix-rain" data-matrix-rain aria-hidden="true"></div>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="terminal-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell-window" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>NoE@portfolio:~</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-menu>
+          <a href="index.html">home</a>
+          <button class="nav-button" type="button" data-about-open>about</button>
+          <a href="projects.html">projects</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-layout">
+        <div class="page-hero">
+          <p class="eyebrow">message.delivered</p>
+          <h1>Message Sent</h1>
+          <p>Your message was submitted successfully.</p>
+        </div>
+
+        <section class="contact-form shell-window" aria-label="Submission status">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window-title">~/message.status</span>
+          </div>
+          <div class="form-body">
+            <p class="form-feedback success">$ message sent successfully</p>
+            <a class="btn primary" href="contact.html">./send-another</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="about-modal" data-about-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button class="modal-backdrop" type="button" data-about-close aria-label="Close about terminal"></button>
+      <section class="about-terminal shell-window" aria-label="About me terminal">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window-title" id="about-modal-title">~/about.md</span>
+          <button class="terminal-close" type="button" data-about-close aria-label="Close">x</button>
+        </div>
+        <div class="terminal-body" data-terminal="about">
+          <p><span class="prompt">$</span> cat about.md</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
