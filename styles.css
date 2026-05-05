@@ -204,6 +204,14 @@ textarea {
   background: var(--green);
 }
 
+.icon {
+  width: 33px;
+  height: 33px;
+
+  -webkit-mask-size: 60%;
+  mask-size: 60%;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
