@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NoE | Terminal Portfolio</title>
+    <title>NoE114 | Portfolio</title>
     <link rel="icon" type="image/png" href="terminal.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
       <nav class="nav shell-window" aria-label="Primary navigation">
         <a class="brand" href="index.html" aria-label="Home">
           <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>NoE@portfolio:~</span>
+          <span>noe@shell:~</span>
         </a>
         <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -39,12 +39,20 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">booting interactive portfolio</p>
-          <h1>Full-stack student developer building clean, usable web experiences.</h1>
+          <p class="eyebrow">initializing system...</p>
+
+          <h1>
+            > focus <br>
+            systems <br>
+            security <br>
+            open-source
+          </h1>
+
           <p>
-            I turn ideas into practical interfaces with HTML, CSS, JavaScript, React, Node,
-            Python, and a terminal-first workflow.
+            > stack <br>
+            C • Python • Rust
           </p>
+
           <div class="hero-actions">
             <a class="btn primary" href="#projects">./view-projects</a>
             <button class="btn" type="button" data-about-open>./about-me</button>
@@ -66,18 +74,19 @@
       <section class="section split" id="about">
         <div>
           <p class="eyebrow">cat about.md</p>
-          <h2>Practical code, calm interfaces, and better details.</h2>
+          <h2>Practical code, simple tools, and systems that make sense.</h2>
         </div>
+
         <div class="about-panel shell-window">
           <p>
-            I like building transparent, accessible, and purposeful technology. My work focuses on
-            readable code, responsive layouts, smooth interaction, and products that are simple to
-            understand.
+            I build scripts, tools, and small systems while exploring security and low-level concepts.
+            My focus is on clarity, efficiency, and understanding how things actually work.
           </p>
+
           <dl class="stats">
-            <div><dt>Focus</dt><dd>Full-stack web</dd></div>
+            <div><dt>Focus</dt><dd>Systems • Security • Open-source</dd></div>
             <div><dt>Status</dt><dd>Student</dd></div>
-            <div><dt>Workflow</dt><dd>Linux, Git, CLI</dd></div>
+            <div><dt>Environment</dt><dd>Arch Linux • Git • Neovim • CLI</dd></div>
           </dl>
         </div>
       </section>
@@ -88,11 +97,12 @@
           <h2>Featured Projects</h2>
           <a class="text-link" href="projects.html">open full project log</a>
         </div>
+
         <div class="projects-grid" data-projects-featured>
           <article class="project-card shell-window">
             <span class="project-command">$ git fetch NoE114</span>
-            <h3>Loading repositories</h3>
-            <p>Fetching latest public projects from GitHub.</p>
+            <h3>Loading repositories...</h3>
+            <p>Fetching selected projects from GitHub.</p>
           </article>
         </div>
       </section>
@@ -102,18 +112,40 @@
           <p class="eyebrow">printenv STACK</p>
           <h2>Toolbox</h2>
         </div>
+
         <div class="skill-marquee shell-window" aria-label="Skills">
           <div class="skill-track">
+
             <div class="skill-group">
-              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>React</span>
-              <span>Node.js</span><span>Python</span><span>C</span><span>Git</span>
-              <span>GitHub</span><span>Linux</span><span>REST APIs</span><span>Figma</span>
+              <span>C</span>
+              <span>Python</span>
+              <span>Rust</span>
+              <span>Linux</span>
+              <span>Arch Linux</span>
+              <span>Git</span>
+              <span>Neovim</span>
+              <span>Shell</span>
+              <span>CLI</span>
+              <span>Security</span>
+              <span>Open-source</span>
+              <span>Scripting</span>
             </div>
+
             <div class="skill-group" aria-hidden="true">
-              <span>JavaScript</span><span>HTML</span><span>CSS</span><span>React</span>
-              <span>Node.js</span><span>Python</span><span>C</span><span>Git</span>
-              <span>GitHub</span><span>Linux</span><span>REST APIs</span><span>Figma</span>
+              <span>C</span>
+              <span>Python</span>
+              <span>Rust</span>
+              <span>Linux</span>
+              <span>Arch Linux</span>
+              <span>Git</span>
+              <span>Neovim</span>
+              <span>Shell</span>
+              <span>CLI</span>
+              <span>Security</span>
+              <span>Open-source</span>
+              <span>Scripting</span>
             </div>
+
           </div>
         </div>
       </section>
@@ -121,12 +153,14 @@
 
     <div class="about-modal" data-about-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
       <button class="modal-backdrop" type="button" data-about-close aria-label="Close about terminal"></button>
+
       <section class="about-terminal shell-window" aria-label="About me terminal">
         <div class="window-bar">
           <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="window-title" id="about-modal-title">~/about.md</span>
           <button class="terminal-close" type="button" data-about-close aria-label="Close">x</button>
         </div>
+
         <div class="terminal-body" data-terminal="about">
           <p><span class="prompt">$</span> cat about.md</p>
         </div>
@@ -134,7 +168,7 @@
     </div>
 
     <footer class="site-footer">
-      <span>NoE@portfolio:~$ exit</span>
+      <span>noe@shell:~$ exit</span>
       <a href="contact.html">start a conversation</a>
     </footer>
 

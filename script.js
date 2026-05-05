@@ -21,23 +21,31 @@ const fallbackProjects = [
 
 const terminalLines = [
   ["$", "whoami"],
-  ["", "NoE"],
+  ["", "NoE114"],
   ["$", "role"],
-  ["", "Student developer / full-stack builder"],
-  ["$", "stack --top"],
-  ["", "JavaScript  HTML  CSS  React  Node  Python  Linux"],
-  ["$", "mission"],
-  ["", "Build clean, accessible, useful software."],
+  ["", "Systems & security focused student"],
+  ["$", "stack --core"],
+  ["", "C  Python  Linux"],
+  ["$", "environment"],
+  ["", "Arch Linux  Neovim  CLI"],
+  ["$", "focus"],
+  ["", "systems  security  open-source"],
 ];
 
 const aboutLines = [
   ["$", "cat about.md"],
-  ["", "NoE is a student developer focused on practical full-stack web work."],
-  ["", "I care about readable code, responsive layouts, accessible interactions, and interfaces that feel clear instead of noisy."],
+  ["", ""],
+  ["", "I build scripts, tools, and small systems while exploring security"],
+  ["", "and low-level concepts."],
+  ["", ""],
+  ["", "I care about clarity, efficiency, and understanding how things"],
+  ["", "actually work under the hood."],
+  ["", ""],
   ["$", "current_stack"],
-  ["", "JavaScript, HTML, CSS, React, Node.js, Python, C, Git, GitHub, Linux, REST APIs, Figma"],
+  ["", "C, Python, Rust, Linux, Git, Shell"],
+  ["", ""],
   ["$", "working_style"],
-  ["", "Terminal-first, detail-oriented, and always looking for the cleaner implementation."],
+  ["", "terminal-first, detail-oriented, practical"],
 ];
 
 const menuToggle = document.querySelector(".menu-toggle");
